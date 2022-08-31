@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<style>
+html{background-color: hsl(221, 84%, 30%);}
+#img_1{width: 30%;}
+.image-wrap{width: 100%;}
+*{font-family: 'Dongle', sans-serif;}
+a{  color: azure; font-size: 30px;}
+h1{color: rgb(255, 255, 255); font-size: 50px; text-align:center }
+#wrapper{
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 10px;
+}
+footer{
+  text-align: center;
+  height: 10px;
+  position : relative;
+  transform : translateY(-100%);
+}
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Predict</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper" >
+        <h1>Predicting Movie Grosses service</h1>
+        {% block content %}
+    
+        {%  endblock %}
+        <div style = "text-align:right; font-size: 25px;" id="home-bar"><a href="/"> Home </a></div>
+    </div >
+    
+    
+    <footer style="color: azure;font-size: 50px" class="pt-3 mt-4 text-muted border-top">
+        copyright &copy; 2022 Gyeongdo Min
+    </footer>
+</body>
+</html>

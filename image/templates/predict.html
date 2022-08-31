@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <form action = "predict_result" method ="post">
+                <div style="text-align: center; margin:auto" class="input-group">
+                        <input name="title" style="width: 780px;height: 60px;font-size:50px;" type="text" class="form-control" placeholder="예측하고 싶은 영화의 제목을 입력하세요!" aria-label="예측하고 싶은 영화의 제목을 입력하세요!" aria-describedby="button-addon2">
+                        <button style="height: 65px;font-size: 42px;" class="btn btn-outline-secondary" type="submit" id="button-addon2">예측 시작</button>
+                </div>
+                <h1> 검색과 매출액 측정에 30초정도 소요됩니다.... 화면이 바뀔 때까지 기다려주세요 !!</h1>
+        </form>
+{% endblock %}
