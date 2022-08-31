@@ -6,3 +6,4 @@ movie_crawling.ipynb
 movie_crawling_log.txt
 naver_crawling_log.txt
 webtoon_crawling.ipynb
+__pycache__
