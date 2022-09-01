@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+div{text-align: center;}
+tr{font: italic bold 1.5em/1em Georgia, serif;}
+</style>
+    <div>
+        <h1> {{ title }}의 예상 매출액은 ${{ result }}M 입니다. </h1>
+        <h1> 아래 자료는 IMDB 홈페이지의 데이터입니다. </h1>
+    </div>
+    <div style="width: 600px; text-align: center; margin:auto">
+        <br>
+        <img id="target_image" src= '{{ image }}' width="500px" height="700px"/>
+        <br>
+    </div>
+    <div>
+        <table
+            border="1"
+            width="100%"
+            height="200"
+            cellspacing="5">
+            <caption></caption>
+            <thead>
+                <tr align="center" bgcolor="white">
+                    {% for item in column %}
+                    <th>{{ item }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr align="center" bgcolor="white">
+                    {% for item in info %}
+                    <td>{{ item }}</td>                                                  
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style = "text-align:right" id="home-bar"><a href="/predict"> 다른영화 예측하기 </a></div>
+{% endblock %}
+        
